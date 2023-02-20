@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: bisque;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+div#root {
+  min-height: 100vh;
+  padding-bottom: 20px;
+}
+
+.wow {
+    width: 80px;
+    font-size: small;
+    height: 15px;
+    display: inline-block;
+
+  }
+
+  .dod .css-b62m3t-container {
+    border-radius: 20px;
+    border-color: black;
+    height: 10px;
+  }
+
+  body .dod .css-13cymwt-control {
+    border-radius: 20px;
+    border-color: black;
+    height: 10px;
+  }
+
+  body .dod .css-13cymwt-control:hover,
+  body .dod .css-13cymwt-control:focus {
+    border-color: orangered;
+    border-radius: 20px;
+  }
+
+  .dod .css-1xc3v61-indicatorContainer {
+    color: black;
+  }
+  .dod .css-13cymwt-control:hover .css-1xc3v61-indicatorContainer {
+    color: orangered;
+  }
+
+  .dod .css-1u9des2-indicatorSeparator {
+    border: 1px solid black;
+  }
+  .dod .css-13cymwt-control:hover .css-1u9des2-indicatorSeparator {
+    border-color: orangered;
+  }
