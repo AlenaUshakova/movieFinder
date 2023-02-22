@@ -18,16 +18,19 @@ import { Modal } from 'components/Modal/Modal';
 import ReactPlayer from 'react-player';
 import { Button } from 'components/Button/Button';
 import { RxVideo } from 'react-icons/rx';
+import { useContext } from 'react';
+import { languageContext } from 'context/LanguageContext';
 
 const BASE_URL = 'https://image.tmdb.org/t/p/w500';
 
-const MovieDetails = ({ value }) => {
+const MovieDetails = () => {
   const { id } = useParams();
   const [showModal, setShowModal] = useState(false);
   const [movieId, setMovieId] = useState(null);
   const [movieVideo, setMovieVideo] = useState('');
   const location = useLocation();
   const backLinkHref = location.state?.from ?? '/';
+  const { value } = useContext(languageContext);
 
   useEffect(() => {
     movieById(id, value).then(r => {

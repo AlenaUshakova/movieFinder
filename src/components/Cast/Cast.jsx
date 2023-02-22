@@ -10,14 +10,17 @@ import {
   FilmHero,
 } from './Cast.styled';
 import { nanoid } from 'nanoid';
+import { useContext } from 'react';
+import { languageContext } from 'context/LanguageContext';
 
 const BASE_URL = 'https://image.tmdb.org/t/p/w500';
 const defoltImg =
   'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJnNH6I8IvZndxspJlJ0BDEyUNHxLvNokyWQ&usqp=CAU';
 
-const Cast = ({ value }) => {
+const Cast = () => {
   const { id } = useParams();
   const [castList, setCastList] = useState();
+  const { value } = useContext(languageContext);
 
   useEffect(() => {
     movieCast(id, value).then(setCastList);

@@ -6,12 +6,15 @@ import {
   popularMovies,
 } from '../../components/services/api-movie';
 import { Button } from '../../components/Button/Button';
+import { useContext } from 'react';
+import { languageContext } from 'context/LanguageContext';
 
-const Home = ({ value }) => {
+const Home = () => {
   const [movies, setMovies] = useState([]);
   const [ganre, setGanre] = useState([]);
   const [page, setPage] = useState(1);
   const [total_results, setTotalResults] = useState(null);
+  const { value } = useContext(languageContext);
 
   useEffect(() => {
     genresMovies(value).then(r => {

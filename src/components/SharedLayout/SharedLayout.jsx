@@ -5,13 +5,12 @@ import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Select from 'react-select';
 import { Loader } from 'components/Loader/Loader';
+import { useContext } from 'react';
+import { languageContext } from 'context/LanguageContext';
 
-export const SharedLayout = ({
-  value,
-  selectedOption,
-  setSelectedOption,
-  options,
-}) => {
+export const SharedLayout = () => {
+    const { selectedOption, setSelectedOption, options, value } =
+      useContext(languageContext);
   return (
     <Container>
       <Header>

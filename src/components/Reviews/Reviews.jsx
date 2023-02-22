@@ -3,15 +3,18 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { ReviewsList, ReviewsAuthor, ReviewsItem } from './Reviews.styled';
+import { useContext } from 'react';
+import { languageContext } from 'context/LanguageContext';
 
-const Reviews = ({ value }) => {
+const Reviews = () => {
   const { id } = useParams();
   const [reviews, setReviews] = useState(null);
+  const { value } = useContext(languageContext);
 
   useEffect(() => {
     movieReviews(id, value).then(r => {
       if (r.length === 0) {
-       movieReviews(id, 'en').then(setReviews);
+        movieReviews(id, 'en').then(setReviews);
       }
       setReviews(r);
     });
@@ -39,7 +42,6 @@ const Reviews = ({ value }) => {
           {value === 'ru'
             ? 'Для этого фильма еще нет отзывов'
             : 'We don"t have any reviews for this movie'}
-          
         </p>
       )}
     </div>

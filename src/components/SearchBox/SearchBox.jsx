@@ -1,8 +1,10 @@
 import { Forma, Input, SearchBtn } from './SearchBox.styled';
+import { useContext } from 'react';
+import { languageContext } from 'context/LanguageContext';
 
 
-export const SearchBox = ({ onSubmit, value }) => {
-
+export const SearchBox = ({ onSubmit}) => {
+  const { value } = useContext(languageContext);
   const handleSubmit = e => {
     e.preventDefault();
     const { query } = e.target.elements;

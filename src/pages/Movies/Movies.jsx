@@ -11,14 +11,17 @@ import { Button } from '../../components/Button/Button';
 import { NoResults } from 'components/NoResults/NoResults';
 import { NoSearch } from 'components/NoSearch/NoSearch';
 import { toast } from 'react-toastify';
+import { useContext } from 'react';
+import { languageContext } from 'context/LanguageContext';
 
-const Movies = ({ value }) => {
+const Movies = () => {
   const [movies, setMovies] = useState([]);
   const [ganre, setGanre] = useState([]);
   const [page, setPage] = useState(1);
   const [total_results, setTotalResults] = useState(null);
   const [searchParams, setSearchParams] = useSearchParams();
   const query = searchParams.get('query') ?? '';
+  const { value } = useContext(languageContext);
 
   const formSubmit = inputQuery => {
     if (inputQuery === query) {
@@ -31,7 +34,7 @@ const Movies = ({ value }) => {
     if (inputQuery === '') {
       return toast.error(
         value === 'ru'
-          ? "Вы ничего не ввели для поиска"
+          ? 'Вы ничего не ввели для поиска'
           : 'You did not enter anything to search'
       );
     }
@@ -62,7 +65,7 @@ const Movies = ({ value }) => {
         setGanre(r);
       }
     });
-    
+
     movieByQuery(query, page, value).then(r => {
       setMovies(prevMovie => [...prevMovie, ...r.results]);
       setTotalResults(r.total_results);
@@ -78,9 +81,9 @@ const Movies = ({ value }) => {
 
   return (
     <MovieMain>
-      <SearchBox value={value} onSubmit={formSubmit} />
+      <SearchBox onSubmit={formSubmit} />
       {total_results === 0 && <NoResults value={value} query={query} />}
-      {query ==='' && total_results !== 0 && <NoSearch value={value} />}
+      {query === '' && total_results !== 0 && <NoSearch value={value} />}
       {query && <FilmList movies={movies} ganre={ganre} />}
       {total_results / 12 >= page && query !== '' && (
         <Button onClick={loadMore}>
