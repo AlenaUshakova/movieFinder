@@ -130,7 +130,8 @@ const MovieDetails = () => {
             <MovieTrailer>
               <Button onClick={toggleModal}>
                 {' '}
-                <RxVideo size={20} style={{ marginRight: '10px' }} /> Trailer
+                <RxVideo size={20} style={{ marginRight: '10px' }} />{' '}
+                {value === 'ru' ? 'Трейлер' : 'Trailer'}
               </Button>
             </MovieTrailer>
           )}
