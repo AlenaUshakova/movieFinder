@@ -164,8 +164,8 @@ const MovieDetails = () => {
           <ReactPlayer
             muted={true}
             controls={true}
-            width={1000}
-            height={600}
+            width="100%"
+            height="100%"
             url={`https://www.youtube.com/watch?v=${movieVideo}`}
           />
         </Modal>

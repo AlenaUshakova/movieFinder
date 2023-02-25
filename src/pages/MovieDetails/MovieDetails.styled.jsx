@@ -8,6 +8,7 @@ export const ContainerMovie = styled.div`
   padding-left: 20px;
   padding-right: 20px;
   position: relative;
+
 `;
 
 export const MovieDetText = styled.div`
