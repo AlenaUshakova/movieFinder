@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/movieFinder/static/css/main.d0921e83.css",
-    "main.js": "/movieFinder/static/js/main.2f972e3d.js",
+    "main.js": "/movieFinder/static/js/main.0f1517db.js",
     "static/css/514.5c43291e.chunk.css": "/movieFinder/static/css/514.5c43291e.chunk.css",
     "static/js/514.f6467f99.chunk.js": "/movieFinder/static/js/514.f6467f99.chunk.js",
     "static/css/701.5c43291e.chunk.css": "/movieFinder/static/css/701.5c43291e.chunk.css",
     "static/js/701.ebfec7dd.chunk.js": "/movieFinder/static/js/701.ebfec7dd.chunk.js",
-    "static/js/810.524a0a11.chunk.js": "/movieFinder/static/js/810.524a0a11.chunk.js",
+    "static/js/810.7640db71.chunk.js": "/movieFinder/static/js/810.7640db71.chunk.js",
     "static/js/387.6c64fd85.chunk.js": "/movieFinder/static/js/387.6c64fd85.chunk.js",
     "static/js/736.37e295ed.chunk.js": "/movieFinder/static/js/736.37e295ed.chunk.js",
     "static/js/388.f56fe1ec.chunk.js": "/movieFinder/static/js/388.f56fe1ec.chunk.js",
@@ -17,12 +17,12 @@
     "static/media/NoPoster.jpg": "/movieFinder/static/media/NoPoster.21cc4a70d3b080640626.jpg",
     "index.html": "/movieFinder/index.html",
     "main.d0921e83.css.map": "/movieFinder/static/css/main.d0921e83.css.map",
-    "main.2f972e3d.js.map": "/movieFinder/static/js/main.2f972e3d.js.map",
+    "main.0f1517db.js.map": "/movieFinder/static/js/main.0f1517db.js.map",
     "514.5c43291e.chunk.css.map": "/movieFinder/static/css/514.5c43291e.chunk.css.map",
     "514.f6467f99.chunk.js.map": "/movieFinder/static/js/514.f6467f99.chunk.js.map",
     "701.5c43291e.chunk.css.map": "/movieFinder/static/css/701.5c43291e.chunk.css.map",
     "701.ebfec7dd.chunk.js.map": "/movieFinder/static/js/701.ebfec7dd.chunk.js.map",
-    "810.524a0a11.chunk.js.map": "/movieFinder/static/js/810.524a0a11.chunk.js.map",
+    "810.7640db71.chunk.js.map": "/movieFinder/static/js/810.7640db71.chunk.js.map",
     "387.6c64fd85.chunk.js.map": "/movieFinder/static/js/387.6c64fd85.chunk.js.map",
     "736.37e295ed.chunk.js.map": "/movieFinder/static/js/736.37e295ed.chunk.js.map",
     "388.f56fe1ec.chunk.js.map": "/movieFinder/static/js/388.f56fe1ec.chunk.js.map",
@@ -31,6 +31,6 @@
   },
   "entrypoints": [
     "static/css/main.d0921e83.css",
-    "static/js/main.2f972e3d.js"
+    "static/js/main.0f1517db.js"
   ]
 }
